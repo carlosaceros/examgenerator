@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * El docente prepara examenes, crea temas y preguntas para cada tema
  * 
@@ -32,6 +32,7 @@ public class Docente
      */
     public boolean agregaTema(Tema tema)
     {
+        
         return true;
     }
     
