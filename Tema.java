@@ -53,9 +53,19 @@ public class Tema
      * @param nombreTema
      * @return true si es eliminado
      */
-    public boolean EliminarTema(String nombre)
+    public void EliminarTema()
     {
-      return true; 
+        System.out.println("Ingrese el nombre del tema a eliminar");
+        Scanner nombre = new Scanner(System.in);
+        String objetivo = nombre.next();
+        for(String nombreTema : temas) { 
+            
+            if(objetivo.equals(nombreTema)){
+            temas.remove(nombreTema);
+            System.out.println("Tema eliminado");
+            }
+} 
+         
     }
     
     /**
