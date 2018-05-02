@@ -8,16 +8,32 @@ import java.util.*;
 public class Tema
 {
     
-
+    private String nombreTema;
+    private int idTema;
+    private ArrayList<String> temas = new ArrayList<String>();
+    
+    public Tema(){
+        
+        this.nombreTema= nombreTema;
+        this.idTema = idTema;
+        
+    
+    }
+    
     /**
      * Este metodo permite crear un tema
      * 
      * @param nombreTema,idTema
      * @return
      */
-    public void CrearTema(String nombreTema,int idTema)
+    public void crearTema(String nombreTema)
     {
-       
+        System.out.println("Ingrese el nombre del tema");
+        Scanner nombreT= new Scanner(System.in);
+        nombreTema = nombreT.next();
+        temas.add(nombreTema);
+        System.out.println("Tema agregado a la lista");
+        
     }
     
     /**
@@ -48,10 +64,19 @@ public class Tema
      * @param 
      * @return 
      */
-    public void ListarTemas(Tema temas)
+    public void ListarTemas()
     {
-       
-    }
+        if (temas.size() == 0){
+        System.out.println("No hay temas para mostrar");
+        }else{
+            System.out.println("----Lista de temas---");
+       for(String nombreTema : temas) { System.out.println(nombreTema + "\n");
+} 
+System.out.println("--Fin lista de temas--");
 }
+
+}
+    }
+
 
 
