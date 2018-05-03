@@ -26,7 +26,7 @@ public class Tema
      * @param nombreTema,idTema
      * @return
      */
-    public void crearTema(String nombreTema)
+    public void crearTema()
     {
         System.out.println("Ingrese el nombre del tema");
         Scanner nombreT= new Scanner(System.in);
